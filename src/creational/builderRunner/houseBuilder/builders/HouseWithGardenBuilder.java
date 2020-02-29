@@ -36,7 +36,7 @@ public class HouseWithGardenBuilder implements HouseBuilder {
 
     @Override
     public void buildGarage(Garage garage) {
-        System.out.println("This house has no garage.");
+        // This house has no garage
     }
 
     @Override
