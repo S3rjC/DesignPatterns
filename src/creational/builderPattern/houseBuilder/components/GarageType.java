@@ -1,7 +1,7 @@
 package creational.builderPattern.houseBuilder.components;
 
 /**
- * @author Serghei Cibotarica
+ * @author Serj C.
  */
 public enum GarageType {
     SLIDING_DOOR, NORMAL_DOORS

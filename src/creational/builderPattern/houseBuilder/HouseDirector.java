@@ -4,7 +4,7 @@ import creational.builderPattern.houseBuilder.builders.HouseBuilder;
 import creational.builderPattern.houseBuilder.components.*;
 
 /**
- * @author Serghei Cibotarica
+ * @author Serj C.
  */
 public class HouseDirector {
     public void buildSimpleHouse(HouseBuilder builder) {

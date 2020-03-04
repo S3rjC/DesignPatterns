@@ -3,7 +3,7 @@ package creational.builderPattern.houseBuilder.products;
 import creational.builderPattern.houseBuilder.components.*;
 
 /**
- * @author Serghei Cibotarica
+ * @author Serj C.
  */
 public class HouseWithGarden {
     private final Walls walls;

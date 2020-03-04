@@ -1,7 +1,7 @@
 package creational.builderPattern.houseBuilder.components;
 
 /**
- * @author Serghei Cibotarica
+ * @author Serj C.
  */
 public enum Material {
     WOOD, STONE, METAL
