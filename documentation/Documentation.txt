@@ -1,0 +1,63 @@
+DESIGN PATTERNS
+
+I. CREATIONAL PATTERNS
+Creational patterns provide various object creation mechanisms, which increase flexibility and reuse of existing code.
+-------------------
+1. SINGLETON is a creational design pattern that lets you ensure that a class has only one instance,
+while providing a global access point to this instance.
+    Pros: * You can be sure that a class has only a single instance.
+          * You gain a global access point to that instance.
+          * The singleton object is initialized only when it’s requested for the first time.
+
+    Cons: * Violates the Single Responsibility Principle. The pattern solves two problems at the time.
+          * The Singleton pattern can mask bad design, for instance, when the components of the program
+            know too much about each other.
+          * The pattern requires special treatment in a multithreaded environment so that multiple threads
+            won’t create a singleton object several times.
+          * It may be difficult to unit test the client code of the Singleton because many test frameworks
+            rely on inheritance when producing mock objects. Since the constructor of the singleton class
+            is private and overriding static methods is impossible in most languages, you will need to think
+            of a creative way to mock the singleton. Or just don’t write the tests. Or don’t use the Singleton pattern.
+
+2. FACTORY METHOD is a creational design pattern that provides an interface for creating objects in
+a superclass, but allows subclasses to alter the type of objects that will be created.
+    Pros: * You avoid tight coupling between the creator and the concrete products.
+          * Single Responsibility Principle. You can move the product creation code into one place in the program,
+            making the code easier to support.
+          * Open/Closed Principle. You can introduce new types of products into the program without breaking
+            existing client code.
+
+    Cons: * The code may become more complicated since you need to introduce a lot of new subclasses to implement
+            the pattern. The best case scenario is when you’re introducing the pattern into an existing hierarchy
+            of creator classes.
+
+3. ABSTRACT FACTORY is a creational design pattern that lets you produce families of related objects
+without specifying their concrete classes.
+    Pros: * You can be sure that the products you’re getting from a factory are compatible with each other.
+          * You avoid tight coupling between concrete products and client code.
+          * Single Responsibility Principle. You can extract the product creation code into one place,
+            making the code easier to support.
+          * Open/Closed Principle. You can introduce new variants of products without breaking existing client code.
+
+    Cons: * The code may become more complicated than it should be, since a lot of new interfaces and classes are
+            introduced along with the pattern.
+
+4. BUILDER is a creational design pattern that lets you construct complex objects step by step.
+The pattern allows you to produce different types and representations of an object using the same construction code.
+    Pros: * You can construct objects step-by-step, defer construction steps or run steps recursively.
+          * You can reuse the same construction code when building various representations of products.
+          * Single Responsibility Principle. You can isolate complex construction code from the business logic of
+            the product.
+
+    Cons: * The overall complexity of the code increases since the pattern requires creating multiple new classes.
+
+5. PROTOTYPE is a creational design pattern that lets you copy existing objects without making your code dependent on
+their classes.
+    Pros: * You can clone objects without coupling to their concrete classes.
+          * You can get rid of repeated initialization code in favor of cloning pre-built prototypes.
+          * You can produce complex objects more conveniently.
+          * You get an alternative to inheritance when dealing with configuration presets for complex objects.
+
+    Cons: * Cloning complex objects that have circular references might be very tricky.
+
+II. STRUCTURAL PATTERNS
