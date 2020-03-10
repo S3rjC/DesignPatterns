@@ -25,6 +25,7 @@ public class PrototypeClient {
     public static void main(String[] args) {
         ConcretePrototype object1 = new ConcretePrototype();
         object1.field1 = 1;
+
         SubclassPrototype object2 = new SubclassPrototype();
         object2.field2 = 2;
 
@@ -32,7 +33,7 @@ public class PrototypeClient {
         Prototype prototype2 = object2.clone();
 
         if (prototype1 != object1 && prototype2 != object2) {
-            System.out.println("Objects are different! (YES!)");
+            System.out.println("Objects are different (YES!)");
             if (prototype1.equals(object1) && prototype2.equals(object2)) {
                 System.out.println("And they are identical (YES!)");
             } else {
