@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="FactoryMethodDialogTest" type="Application" factoryName="Application">
+    <option name="MAIN_CLASS_NAME" value="creational.factoryMethodPattern.FactoryMethodDialogTest" />
+    <module name="DesignPatterns" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>
